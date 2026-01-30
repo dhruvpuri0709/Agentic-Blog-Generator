@@ -59,7 +59,7 @@ class GraphBuilder:
         #     return self.build_language_graph().compile()
 
 ## Below code is for langsmith langgraph studio
-llm = GroqLLM().get_llm()
+llm = GroqLLM(model_name = "openai/gpt-oss-120b").get_llm()
 
 ##Get the graph
 graph_builder = GraphBuilder(llm)
